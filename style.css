@@ -1,21 +1,125 @@
 
-img {
-  max-width:100%;
-}
-
 html, body {
   padding:0;
   margin:0;
   font-family: 'Mochiy Pop P One', sans-serif;
 }
 
+h1 {
+  font-size:10vw;
+  color: white;
+  line-height:1.5;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.img {
+  border-radius: 5px;
+}
+
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align:center;
+}
+
 .hero {
-  background-image: url("Img/Image.jpeg");
+  background-image: url("Img/Heroimage.jpeg");
   background-size:cover;
-  width:100%; 
-  height: 100%;
+  height:900px;
 }
 
 .container {
-  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding: 8rem 5rem;
+  text-align:center;
 }
+
+.lightbackground {
+  background-color: #f0f0f0;
+}
+
+.darkbackground {
+  background-color: #334756;
+  color:white;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #2C272E;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #090910;
+}
+
+.columns {
+  display:flex;
+  flex:1;
+  flew-direction:flow;
+  Align-items: center;
+  display:flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .columns {
+    flex-direction:column;
+  }
+}
+
+.slideshow {
+  max-width: 100%;
+}
+
+.leftside {
+  max-width:40%;
+  padding: 20px 30px;
+  text-align:left;
+}
+
+.rightside {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 300px;
+}
+
+@media (max-width: 750px) {
+.rightside {
+max-width: 200px;
+}
+

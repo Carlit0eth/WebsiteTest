@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Asie Delices Restaurant</title>
+    <title>Asie Delices Fastfood Asiatique</title>
+    
     <link href="style.css" rel="stylesheet"     type="text/css" />
+    <!--Font police -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect"   href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
   </head>
+  
   <body>
-    <header class="hero">
+
+    <!-- hero section (landing page)-->
+    <header class="hero text-center">
       <div class="container">
         <h1>Bienvenue chez Asie Delices</h1>
-        <p>Adresse here</p>
+        <!-- Btn section (landing page)-->
+        <a href="#Menu" class="btn">Découvrir le menu</a>
+        <a href="#Command" class="btn">Commandez maintenant</a>
+        </div>
       </div>
     </header>
     
-    <section>
-    <h2>a tous mes amis</h2>
+  <!-- Menu section-->
+  <section id="Menu" class="container lightbackground text-center">
+    <div class="columns">
+        <!-- Left section with download button-->
+        <div class="leftside">
+          <h2>Toute la cuisine de Asie Délices</h2>
+          <p>Retrouvez tous les plats qui viennent de Chine, Cambodge, Thaïlande avec des cuisinés experimentés. Tous les plats sont en grande partie réalisées sur places comme nos très fameux Nems.</p>
+          <a href="" class="btn center">Découvrir le menu</a>
+        </div>
 
-      
-    </section>
+        <!-- right section with slideshow-->
+        <div class="rightside">
+          <img class="img slideshow" src="Img/Platasiatique.jpeg" alt="plats asiatique">
+        </div>
+    </div>
+  </section>
+
+  <!-- Menu section-->
+  <section id="Command" class="container darkbackground">
+    <h2>Commandez sur Uber Eats !</h2>
+      <p>Retrouvez tous nos plats sur Uber Eats avec une livraison très rapide. Vos meilleurs plats asiatiques de Saint Raphaël sont maintenant dispobibles via votre application préférée.</p>
+      <a href="" class="btn center">Commandez ici</a>
+  </section>
     
     <script src="script.js"></script>
   </body>
