@@ -1,0 +1,21 @@
+
+img {
+  max-width:100%;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.hero {
+  background-image: url("Img/Image.jpeg");
+  background-size:cover;
+  width:100%; 
+  height: 100%;
+}
+
+.container {
+  padding: 30px 40px;
+}
