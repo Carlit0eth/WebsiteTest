@@ -15,14 +15,23 @@
   
   <body>
 
-    <!-- hero section (landing page)-->
+  <!-- hero section (landing page)-->
     <header class="hero text-center">
-      <div class="container">
-        <h1>Bienvenue chez Asie Delices</h1>
-        <!-- Btn section (landing page)-->
-        <a href="#Menu" class="btn">Découvrir le menu</a>
-        <a href="#Command" class="btn">Commandez maintenant</a>
-        </div>
+      <div class="fullsizecontainer">
+          <!-- Navigation bar (landing page)-->
+          <div class="navigation">
+          <ul>
+            <li>
+              <a href="#Location" class="btnempty">Où nous trouver?</a>
+            </li>
+          </ul>
+          </div>
+          <div class="center">
+          <h1>Bienvenue chez Asie Delices</h1>
+          <!-- Btn section (landing page)-->
+          <a href="#Menu" class="btn">Découvrir le menu</a>
+          <a href="#Command" class="btn">Commandez maintenant</a>
+          </div>
       </div>
     </header>
     
@@ -30,7 +39,7 @@
   <section id="Menu" class="container lightbackground text-center">
     <div class="columns">
         <!-- Left section with download button-->
-        <div class="leftside no-gutters">
+        <div class="leftside">
           <h2>Toute la cuisine de Asie Délices</h2>
           <p>Retrouvez tous les plats qui viennent de Chine, Cambodge, Thaïlande avec des cuisinés experimentés. Tous les plats sont en grande partie réalisées sur places comme nos très fameux Nems.</p>
           <a href="" class="btn center">Découvrir le menu</a>
@@ -43,11 +52,32 @@
     </div>
   </section>
 
-  <!-- Menu section-->
+  <!-- Uber Eats section-->
   <section id="Command" class="container darkbackground">
-    <h2>Commandez sur Uber Eats !</h2>
+    <div class="secondlevelcontainer">
+      <img src="Img/Ubereats.png" alt="Uber eats livraison Asie Delices" class="img logo">
+      <h2>Commandez sur Uber Eats</h2>
       <p>Retrouvez tous nos plats sur Uber Eats avec une livraison très rapide. Vos meilleurs plats asiatiques de Saint Raphaël sont maintenant dispobibles via votre application préférée.</p>
-      <a href="" class="btn center">Commandez ici</a>
+      <a href="https://www.ubereats.com/fr/store/asie-delices/QbouD-bpSICFMaZNdvpaTA?diningMode=DELIVERY" class="btn center">Commandez sur Uber Eats</a>
+      </div>
+  </section>
+
+  <!-- Location Section-->
+  <section id="Location" class="fullsizecontainer lightbackground">
+    <div class="columns">
+        <!-- Left section with download button-->
+        <div class="leftside">
+          <h2>Trouvez notre magasin</h2>
+          <p class="emphasize"></strongAdresse>Adresse</p>
+          <p></pAdresse>Adresse : 73 Rue Gambetta, 83700 Saint-Raphaël</p>
+          <a href="" class="btn center">Découvrir le menu</a>
+        </div>
+
+        <!-- right section with slideshow-->
+        <div class="fullrightside">
+          <img class="img slideshow" src="Img/Map.jpeg" alt="localisation du restaurant Asie Delices">
+        </div>
+    </div>
   </section>
     
     <script src="script.js"></script>

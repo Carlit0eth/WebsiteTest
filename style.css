@@ -7,24 +7,11 @@ html, body {
 }
 
 h1 {
-  font-size:10vw;
+  font-size:40px;
   color: white;
-  line-height:1.5;
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  h1 {
-    font-size: 80px;
-    line-break: loose;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 50px;
-  }
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
 }
 
 h2 {
@@ -33,6 +20,22 @@ h2 {
 
 p {
   font-size: 13px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color:white;
+}
+
+li {
+  float: right;
+}
+
+.emphasize {
+  font-size: 15px;
 }
 
 .img {
@@ -50,11 +53,18 @@ p {
 }
 
 .hero {
-  background-image: url("Img/Heroimage.jpeg");
+  background-image: url("Img/Newheroimage.jpeg");
   background-size:cover;
+  background-position:center;
   position:relative;
   height:100vh;
   width:100vw;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -63,6 +73,18 @@ p {
   width: auto;
   padding: 8rem 5rem;
   text-align:center;
+}
+
+.fullsizecontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align:center;
+  height: 100%;
+}
+
+.center {
+  margin-top: 
 }
 
 .lightbackground {
@@ -95,6 +117,29 @@ p {
     border-color:#2C272E;
     border: solid;
     border-width:2px;
+    color: #2C272E; 
+}
+
+.btnempty {
+    display: inline-flex;
+    margin:20px 20px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border:solid;
+    border-width:2px;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: #f0F0f0;
+}
+
+.btnempty:hover,
+.btnempty:focus {
+    background: transparent;
+    border-color:#f0F0f0;
+    border: solid;
+    border-width:2px;
     color: #2C272E;
   
 }
@@ -105,6 +150,24 @@ p {
   flew-direction:flow;
   Align-items: center;
   display:flex;
+}
+
+.slideshow {
+  max-width: 100%;
+}
+
+.logo {
+  width:100px;
+}
+
+.leftside {
+  text-align:center;
+}
+
+.rightside {
+  margin-left:auto;
+  margin-right:auto;
+  Padding:40px 50px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -119,18 +182,24 @@ p {
   }
 }
 
-.slideshow {
-  max-width: 100%;
+@media only screen and (min-width: 800px) {
+  .secondlevelcontainer {
+    max-width:50%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 60px;
+    margin-top:30vh;
+  }
 }
 
-.leftside {
-  text-align:center;
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
 }
-
-.rightside {
-  margin-left:auto;
-  margin-right:auto;
-  Padding:40px 50px;
-}
-
-
