@@ -3,6 +3,7 @@ html, body {
   padding:0;
   margin:0;
   font-family: 'Mochiy Pop P One', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -15,6 +16,7 @@ h1 {
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 80px;
+    line-break: loose;
   }
 }
 
@@ -50,7 +52,9 @@ p {
 .hero {
   background-image: url("Img/Heroimage.jpeg");
   background-size:cover;
-  height:900px;
+  position:relative;
+  height:100vh;
+  width:100vw;
 }
 
 .container {
@@ -76,8 +80,10 @@ p {
     text-align: center;
     margin: 5px 10px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
+    border:solid;
+    border-width:2px;
     font-weight: 700;
     border-radius: 5px;
     background-color: #2C272E;
@@ -85,7 +91,12 @@ p {
 
 .btn:hover,
 .btn:focus {
-    background: #090910;
+    background: #f0F0f0;
+    border-color:#2C272E;
+    border: solid;
+    border-width:2px;
+    color: #2C272E;
+  
 }
 
 .columns {
@@ -102,24 +113,24 @@ p {
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .leftside {
+    max-width:50%;
+  }
+}
+
 .slideshow {
   max-width: 100%;
 }
 
 .leftside {
-  max-width:40%;
-  padding: 20px 30px;
-  text-align:left;
+  text-align:center;
 }
 
 .rightside {
   margin-left:auto;
   margin-right:auto;
-  max-width: 300px;
+  Padding:40px 50px;
 }
 
-@media (max-width: 750px) {
-.rightside {
-max-width: 200px;
-}
 
