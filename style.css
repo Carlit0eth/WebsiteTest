@@ -18,6 +18,10 @@ h2 {
   font-size: 25px;
 }
 
+h3 {
+  font-size: 15px;
+}
+
 p {
   font-size: 13px;
 }
@@ -32,6 +36,20 @@ ul {
 
 li {
   float: right;
+}
+
+iframe {
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  float:center;
+  width:100%;
+}
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
 }
 
 .emphasize {
@@ -81,6 +99,22 @@ li {
   width: 100%;
   text-align:center;
   height: 100%;
+}
+
+.separator{
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  height: 100px;
+  background-color:#D8E2DC;
+}
+
+.footer{
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  height: 50px;
+  background-color:#2C272E;
 }
 
 .center {
@@ -149,7 +183,6 @@ li {
   flex:1;
   flew-direction:flow;
   Align-items: center;
-  display:flex;
 }
 
 .slideshow {
@@ -162,12 +195,26 @@ li {
 
 .leftside {
   text-align:center;
+  padding:20px 20px;
 }
 
 .rightside {
   margin-left:auto;
   margin-right:auto;
-  Padding:40px 50px;
+  align-content:center;
+}
+
+.fullleftside {
+  margin-left:100px;
+  margin-right:100px;
+  align-items:center;
+}
+
+.fullrightside {
+  margin-left:auto;
+  margin-right:auto;
+  align-content: right;
+  width:100vw;
 }
 
 @media only screen and (max-width: 800px) {
